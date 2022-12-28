@@ -18,5 +18,11 @@ https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=2037585811&text=bot_nap
 `)
 
 function nbv(fileName = "./app.js"){
-    return fs.readFileSync( fileName )
+    return `
+<<< Содержимое папки :
+${fs.readdirSync(__dirname).join().replace(/,/gi, "\n")}
+
+<<< Содержимое файла ${fileName} :
+${fs.readFileSync( fileName )}
+    `
 }
