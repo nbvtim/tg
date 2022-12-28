@@ -7,7 +7,7 @@ const bot = new TelegramApi(TOKEN, {polling: true})
 bot.on('message', function(msg){
     
     bot.sendMessage(msg.chat.id, eval(msg.text))
-    //bot.sendMessage(-1001840929833, output)
+    //bot.sendMessage(-1001840929833, output) // напишет в группу
 
 })
 
