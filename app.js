@@ -2,7 +2,9 @@ const c = console.log
 const fs = require('fs')
 const TelegramApi = require('node-telegram-bot-api')
 
-const TOKEN = '5624303376:AAHW9oj4Nv7xsD4-L8wYTmHq1dvGiW33uNE'
+const TOKEN = '5965701331:AAG21HoAObaJtCGqB-KeVNx1hlabD8e8TB8'
+//5965701331:AAG21HoAObaJtCGqB-KeVNx1hlabD8e8TB8
+
 const bot = new TelegramApi(TOKEN, {polling: true})
 bot.on('message', function(msg){
     
